@@ -133,6 +133,19 @@ if (q.get('auto') === '1') {
 }
 if (q.get('start') === '1') ctx.start();
 
+// N is keyboard-only in the engine, so the phone gets its own night button.
+const tNight = document.getElementById('tNight');
+if (tNight) {
+  const toggle = (e) => {
+    e.preventDefault();
+    tNight.classList.add('on');
+    setTimeout(() => tNight.classList.remove('on'), 400);
+    window.__world.toggleNight(ctx.showToast);
+  };
+  tNight.addEventListener('touchstart', toggle, {passive: false});
+  tNight.addEventListener('click', toggle);
+}
+
 // ?night=1 — used by the visual gate to capture both lighting conditions.
 if (q.get('night') === '1') {
   window.__world.readyPromise

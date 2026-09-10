@@ -124,6 +124,57 @@ async function perf(port) {
   } finally { await browser.close(); }
 }
 
+// ---------------------------------------------------------------- gate 1b ---
+// Reachability, not just correctness: the controls existing in the DOM proves
+// nothing if they render off-screen. Upstream lays eight buttons in one row and
+// the gas button lands at x=564 on a 390 px phone, so the car cannot be driven
+// at all. elementFromPoint is the check that catches it.
+const PHONE = {width: 390, height: 844, isMobile: true, hasTouch: true, deviceScaleFactor: 2};
+const IPHONE_UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 ' +
+                  '(KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1';
+
+async function mobile(port) {
+  const browser = await launch();
+  try {
+    const page = await browser.newPage();
+    await page.emulate({name: 'iPhone', userAgent: IPHONE_UA, viewport: PHONE});
+    const errs = await boot(page, `http://localhost:${port}/index.html`);
+    // hit-test after the start overlay is dismissed: it is supposed to cover
+    // the controls until the player taps DRIVE
+    await page.tap('#startBtn');
+    await new Promise(r => setTimeout(r, 1200));
+    const reach = await page.evaluate(() => {
+      const ids = ['tLeft', 'tRight', 'tBrake', 'tGas', 'tTour', 'tCam', 'tDrift', 'tReset', 'tNight'];
+      return ids.map(id => {
+        const el = document.getElementById(id);
+        if (!el) return {id, ok: false, why: 'missing'};
+        const r = el.getBoundingClientRect();
+        const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+        const hit = document.elementFromPoint(cx, cy);
+        return {id, ok: hit === el, x: Math.round(r.left), y: Math.round(r.top),
+                why: hit === el ? '' : (hit ? 'covered by ' + (hit.id || hit.tagName) : 'off-screen')};
+      });
+    });
+    const bad = reach.filter(r => !r.ok);
+    const touchOn = await page.evaluate(() => document.body.classList.contains('touch'));
+
+    // and it has to actually drive
+    const box = await (await page.$('#tGas')).boundingBox();
+    await page.touchscreen.touchStart(box.x + box.width / 2, box.y + box.height / 2);
+    await new Promise(r => setTimeout(r, 4000));
+    const moved = await page.evaluate(() => ({spd: window.__game.speed, z: window.__game.z}));
+    await page.touchscreen.touchEnd();
+
+    return ok('touch UI is present', touchOn, 'body.touch set at 390x844') &
+      ok('every touch control reachable', bad.length === 0,
+         bad.length ? bad.map(b => `${b.id} ${b.why} at x=${b.x}`).join(', ')
+                    : `${reach.length} controls hit-tested with elementFromPoint`) &
+      ok('gas button drives the car', moved.spd > 5,
+         `speed ${moved.spd.toFixed(1)} m/s after 4 s on the throttle`) &
+      ok('phone run clean', errs.length === 0, errs.slice(0, 2).join(' | ') || 'clean');
+  } finally { await browser.close(); }
+}
+
 // ---------------------------------------------------------------- gate 4 ----
 async function visual(port) {
   const browser = await launch({gpu: true});
@@ -202,6 +253,7 @@ const {server, port} = await serve(0);
 let allPass = true;
 try {
   if (which === 'traversal' || which === 'all') allPass &= await traversal(port);
+  if (which === 'mobile'    || which === 'all') allPass &= await mobile(port);
   if (which === 'perf'      || which === 'all') allPass &= await perf(port);
   if (which === 'visual'    || which === 'all') allPass &= await visual(port);
 } finally { server.close(); }

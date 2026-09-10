@@ -1,6 +1,7 @@
 # Kill gate — results
 
 Run `npm run build && npm run gates`. Numbers below are from the shipped build.
+Gate order: build -> payload -> traversal -> phone -> perf -> visual.
 
 ## 1. Traversal — PASS
 `?auto=1` self-drives from the start north across the full Golden Gate span into
@@ -14,6 +15,20 @@ the Marin headlands, headless under swiftshader.
 | baked geometry vs sim ground | worst 0.156 m over 45 probes (the 0.13 m road lift) |
 | Lombard cut | 26 of 28 probes within 0.2 m; worst 2.50 m at a hairpin |
 | runtime errors | none |
+
+## 1b. Phone reachability — PASS
+390x844, touch emulation. Controls existing in the DOM proves nothing if they
+render off-screen, so every one is hit-tested with `elementFromPoint` and the
+throttle has to actually accelerate.
+
+| check | result |
+|---|---|
+| `body.touch` applied | yes |
+| controls reachable | 9 of 9 |
+| gas button drives | 16.1 m/s after 4 s on the throttle |
+
+Upstream fails this: it lays eight controls in one flex row and the gas button
+lands at x=564 on a 390 px phone, so the car cannot be driven at all.
 
 ## 2. Payload — PASS (this is `npm run build` itself)
 
