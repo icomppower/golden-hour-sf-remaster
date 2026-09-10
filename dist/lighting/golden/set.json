@@ -1,0 +1,675 @@
+{
+ "name": "golden",
+ "generated": "2026-09-09T21:55:33Z",
+ "lightmaps": [
+  {
+   "id": "terrain_00",
+   "file": "lm_terrain_00.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_01",
+   "file": "lm_terrain_01.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_02",
+   "file": "lm_terrain_02.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_03",
+   "file": "lm_terrain_03.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_10",
+   "file": "lm_terrain_10.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_11",
+   "file": "lm_terrain_11.ktx2",
+   "size": 1024
+  },
+  {
+   "id": "terrain_12",
+   "file": "lm_terrain_12.ktx2",
+   "size": 1024
+  },
+  {
+   "id": "terrain_13",
+   "file": "lm_terrain_13.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_20",
+   "file": "lm_terrain_20.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_21",
+   "file": "lm_terrain_21.ktx2",
+   "size": 1024
+  },
+  {
+   "id": "terrain_22",
+   "file": "lm_terrain_22.ktx2",
+   "size": 1024
+  },
+  {
+   "id": "terrain_23",
+   "file": "lm_terrain_23.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_30",
+   "file": "lm_terrain_30.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_31",
+   "file": "lm_terrain_31.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_32",
+   "file": "lm_terrain_32.ktx2",
+   "size": 512
+  },
+  {
+   "id": "terrain_33",
+   "file": "lm_terrain_33.ktx2",
+   "size": 512
+  },
+  {
+   "id": "hero0",
+   "file": "lm_hero0.ktx2",
+   "size": 2048
+  },
+  {
+   "id": "hero1",
+   "file": "lm_hero1.ktx2",
+   "size": 2048
+  },
+  {
+   "id": "kit_ao",
+   "file": "kit_ao.ktx2",
+   "size": 1024
+  }
+ ],
+ "bindings": {
+  "terrain_c00": {
+   "id": "terrain_00",
+   "intensity": 1.53814,
+   "slot": "lightMap"
+  },
+  "terrain_c01": {
+   "id": "terrain_01",
+   "intensity": 1.66406,
+   "slot": "lightMap"
+  },
+  "roads_c01": {
+   "id": "terrain_01",
+   "intensity": 1.66406,
+   "slot": "lightMap"
+  },
+  "road_dashes_c01": {
+   "id": "terrain_01",
+   "intensity": 1.66406,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c01": {
+   "id": "terrain_01",
+   "intensity": 1.66406,
+   "slot": "lightMap"
+  },
+  "lamp_head_c01": {
+   "id": "terrain_01",
+   "intensity": 1.66406,
+   "slot": "lightMap"
+  },
+  "terrain_c02": {
+   "id": "terrain_02",
+   "intensity": 1.58116,
+   "slot": "lightMap"
+  },
+  "roads_c02": {
+   "id": "terrain_02",
+   "intensity": 1.58116,
+   "slot": "lightMap"
+  },
+  "road_dashes_c02": {
+   "id": "terrain_02",
+   "intensity": 1.58116,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c02": {
+   "id": "terrain_02",
+   "intensity": 1.58116,
+   "slot": "lightMap"
+  },
+  "lamp_head_c02": {
+   "id": "terrain_02",
+   "intensity": 1.58116,
+   "slot": "lightMap"
+  },
+  "terrain_c03": {
+   "id": "terrain_03",
+   "intensity": 1.5021,
+   "slot": "lightMap"
+  },
+  "roads_c03": {
+   "id": "terrain_03",
+   "intensity": 1.5021,
+   "slot": "lightMap"
+  },
+  "road_dashes_c03": {
+   "id": "terrain_03",
+   "intensity": 1.5021,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c03": {
+   "id": "terrain_03",
+   "intensity": 1.5021,
+   "slot": "lightMap"
+  },
+  "lamp_head_c03": {
+   "id": "terrain_03",
+   "intensity": 1.5021,
+   "slot": "lightMap"
+  },
+  "terrain_c10": {
+   "id": "terrain_10",
+   "intensity": 1.61542,
+   "slot": "lightMap"
+  },
+  "roads_c10": {
+   "id": "terrain_10",
+   "intensity": 1.61542,
+   "slot": "lightMap"
+  },
+  "road_dashes_c10": {
+   "id": "terrain_10",
+   "intensity": 1.61542,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c10": {
+   "id": "terrain_10",
+   "intensity": 1.61542,
+   "slot": "lightMap"
+  },
+  "lamp_head_c10": {
+   "id": "terrain_10",
+   "intensity": 1.61542,
+   "slot": "lightMap"
+  },
+  "terrain_c11": {
+   "id": "terrain_11",
+   "intensity": 2.0051,
+   "slot": "lightMap"
+  },
+  "roads_c11": {
+   "id": "terrain_11",
+   "intensity": 2.0051,
+   "slot": "lightMap"
+  },
+  "road_dashes_c11": {
+   "id": "terrain_11",
+   "intensity": 2.0051,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c11": {
+   "id": "terrain_11",
+   "intensity": 2.0051,
+   "slot": "lightMap"
+  },
+  "lamp_head_c11": {
+   "id": "terrain_11",
+   "intensity": 2.0051,
+   "slot": "lightMap"
+  },
+  "terrain_c12": {
+   "id": "terrain_12",
+   "intensity": 1.85887,
+   "slot": "lightMap"
+  },
+  "roads_c12": {
+   "id": "terrain_12",
+   "intensity": 1.85887,
+   "slot": "lightMap"
+  },
+  "road_dashes_c12": {
+   "id": "terrain_12",
+   "intensity": 1.85887,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c12": {
+   "id": "terrain_12",
+   "intensity": 1.85887,
+   "slot": "lightMap"
+  },
+  "lamp_head_c12": {
+   "id": "terrain_12",
+   "intensity": 1.85887,
+   "slot": "lightMap"
+  },
+  "terrain_c13": {
+   "id": "terrain_13",
+   "intensity": 1.24486,
+   "slot": "lightMap"
+  },
+  "roads_c13": {
+   "id": "terrain_13",
+   "intensity": 1.24486,
+   "slot": "lightMap"
+  },
+  "road_dashes_c13": {
+   "id": "terrain_13",
+   "intensity": 1.24486,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c13": {
+   "id": "terrain_13",
+   "intensity": 1.24486,
+   "slot": "lightMap"
+  },
+  "lamp_head_c13": {
+   "id": "terrain_13",
+   "intensity": 1.24486,
+   "slot": "lightMap"
+  },
+  "terrain_c20": {
+   "id": "terrain_20",
+   "intensity": 1.27853,
+   "slot": "lightMap"
+  },
+  "terrain_c21": {
+   "id": "terrain_21",
+   "intensity": 2.10503,
+   "slot": "lightMap"
+  },
+  "roads_c21": {
+   "id": "terrain_21",
+   "intensity": 2.10503,
+   "slot": "lightMap"
+  },
+  "road_dashes_c21": {
+   "id": "terrain_21",
+   "intensity": 2.10503,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c21": {
+   "id": "terrain_21",
+   "intensity": 2.10503,
+   "slot": "lightMap"
+  },
+  "lamp_head_c21": {
+   "id": "terrain_21",
+   "intensity": 2.10503,
+   "slot": "lightMap"
+  },
+  "terrain_c22": {
+   "id": "terrain_22",
+   "intensity": 1.42786,
+   "slot": "lightMap"
+  },
+  "roads_c22": {
+   "id": "terrain_22",
+   "intensity": 1.42786,
+   "slot": "lightMap"
+  },
+  "road_dashes_c22": {
+   "id": "terrain_22",
+   "intensity": 1.42786,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c22": {
+   "id": "terrain_22",
+   "intensity": 1.42786,
+   "slot": "lightMap"
+  },
+  "lamp_head_c22": {
+   "id": "terrain_22",
+   "intensity": 1.42786,
+   "slot": "lightMap"
+  },
+  "terrain_c23": {
+   "id": "terrain_23",
+   "intensity": 1.24004,
+   "slot": "lightMap"
+  },
+  "roads_c23": {
+   "id": "terrain_23",
+   "intensity": 1.24004,
+   "slot": "lightMap"
+  },
+  "road_dashes_c23": {
+   "id": "terrain_23",
+   "intensity": 1.24004,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c23": {
+   "id": "terrain_23",
+   "intensity": 1.24004,
+   "slot": "lightMap"
+  },
+  "lamp_head_c23": {
+   "id": "terrain_23",
+   "intensity": 1.24004,
+   "slot": "lightMap"
+  },
+  "terrain_c30": {
+   "id": "terrain_30",
+   "intensity": 1.25764,
+   "slot": "lightMap"
+  },
+  "terrain_c31": {
+   "id": "terrain_31",
+   "intensity": 1.47307,
+   "slot": "lightMap"
+  },
+  "terrain_c32": {
+   "id": "terrain_32",
+   "intensity": 1.47502,
+   "slot": "lightMap"
+  },
+  "roads_c32": {
+   "id": "terrain_32",
+   "intensity": 1.47502,
+   "slot": "lightMap"
+  },
+  "road_dashes_c32": {
+   "id": "terrain_32",
+   "intensity": 1.47502,
+   "slot": "lightMap"
+  },
+  "lamp_pole_c32": {
+   "id": "terrain_32",
+   "intensity": 1.47502,
+   "slot": "lightMap"
+  },
+  "lamp_head_c32": {
+   "id": "terrain_32",
+   "intensity": 1.47502,
+   "slot": "lightMap"
+  },
+  "terrain_c33": {
+   "id": "terrain_33",
+   "intensity": 1.25055,
+   "slot": "lightMap"
+  },
+  "bridge_golden_gate": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_crownTower": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_rowHouses": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_pyramid": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_stadium": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_copperTower": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_wharf": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_church": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lombard_street": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_policeStation": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_islandPrison": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_coitTower": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_windmill": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "lm_bottle": {
+   "id": "hero0",
+   "intensity": 2.00187,
+   "slot": "lightMap"
+  },
+  "bridge_bay": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_clockTower": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_darkTower": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_domeCivic": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_cathedral": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_rotunda": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_theatre": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_mission": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_antennaTower": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_column": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_gate": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_glasshouse": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "lm_pagoda": {
+   "id": "hero1",
+   "intensity": 2.05987,
+   "slot": "lightMap"
+  },
+  "facade": {
+   "id": "kit_ao",
+   "intensity": 1.0,
+   "slot": "aoMap"
+  }
+ },
+ "emissive": {
+  "antennaTower_c23b22_000000_1.00_0.60_0.00": 0.25,
+  "antennaTower_d8dde2_000000_1.00_0.60_0.00": 0.25,
+  "beacon_red": 0.8,
+  "bottle_b01414_000000_1.00_0.40_0.40": 0.25,
+  "bottle_d21a1a_000000_1.00_0.32_0.20": 0.25,
+  "bottle_ffffff_000000_1.00_0.45_0.00": 0.25,
+  "cathedral_332a22_ffcf7a_1.40_1.00_0.00": 0.35,
+  "cathedral_cfcabb_000000_1.00_0.80_0.00": 0.25,
+  "church_f0ece0_000000_1.00_0.70_0.00": 0.25,
+  "clockTower_2a2620_000000_1.00_0.95_0.00": 0.25,
+  "clockTower_8a9a7a_000000_1.00_0.70_0.00": 0.25,
+  "clockTower_cabfa4_000000_1.00_0.75_0.00": 0.25,
+  "clockTower_e2d8c2_000000_1.00_0.70_0.00": 0.25,
+  "clockTower_fff4d8_ffe8b0_1.90_1.00_0.00": 0.475,
+  "coitTower_332a1a_ffd9a0_1.80_1.00_0.00": 0.45,
+  "coitTower_dcd6c8_000000_1.00_0.65_0.00": 0.25,
+  "column_bfae94_000000_1.00_0.90_0.00": 0.25,
+  "column_caa93f_3a3010_0.40_0.40_0.70": 0.1,
+  "column_d8d0c0_000000_1.00_0.70_0.00": 0.25,
+  "copperTower_7d8a5a_000000_1.00_0.60_0.40": 0.25,
+  "crownTower_1a2030_fff2da_1.20_0.50_0.00": 0.3,
+  "crownTower_bfc8d4_ffffff_0.85_0.45_0.25": 0.2125,
+  "darkTower_6a4a44_ffffff_0.70_0.45_0.30": 0.175,
+  "domeCivic_caa93f_000000_1.00_0.30_0.80": 0.25,
+  "domeCivic_caa93f_000000_1.00_0.32_0.80": 0.25,
+  "domeCivic_caa93f_ffdf6a_1.10_0.40_0.70": 0.275,
+  "domeCivic_e4dcc8_000000_1.00_0.70_0.00": 0.25,
+  "facade": 0.45,
+  "gate_1f6e52_000000_1.00_0.55_0.00": 0.25,
+  "gate_9a948a_000000_1.00_0.90_0.00": 0.25,
+  "gate_a8281e_000000_1.00_0.60_0.00": 0.25,
+  "gate_ffffff_ffffff_0.80_0.45_0.00": 0.2,
+  "glasshouse_f2f6f2_bfe0d0_0.28_0.30_0.10": 0.07,
+  "islandPrison_d0c8b4_000000_1.00_0.85_0.00": 0.25,
+  "islandPrison_e8e2d4_000000_1.00_0.70_0.00": 0.25,
+  "lamp_head": 0.4,
+  "mission_2a2018_000000_1.00_1.00_0.00": 0.25,
+  "mission_9a5533_000000_1.00_0.90_0.00": 0.25,
+  "mission_dcc9a8_000000_1.00_0.85_0.00": 0.25,
+  "pagoda_caa93f_000000_1.00_0.40_0.60": 0.25,
+  "pagoda_d6d0c4_000000_1.00_0.70_0.00": 0.25,
+  "policeStation_0a1030_2255ff_3.00_1.00_0.00": 0.75,
+  "policeStation_9aa2ac_000000_1.00_0.85_0.00": 0.25,
+  "policeStation_ffffff_ffffff_1.50_0.45_0.00": 0.375,
+  "pyramid_d8d2c8_000000_1.00_0.55_0.22": 0.25,
+  "pyramid_fff2da_ffe8c0_2.00_1.00_0.00": 0.5,
+  "rotunda_b5895c_000000_1.00_0.60_0.00": 0.25,
+  "rotunda_c99a6a_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_241a12_ffd98a_1.15_1.00_0.00": 0.2875,
+  "rowHouses_40554f_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_4a5a6a_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_554a5a_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_5a5a4a_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_6a4a4a_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_6a5040_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_6a5540_000000_1.00_0.85_0.00": 0.25,
+  "rowHouses_6a5a50_000000_1.00_0.90_0.00": 0.25,
+  "rowHouses_9fd8cf_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_a9c9e8_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_c7e0b0_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_d7b6e6_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_e8a9be_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_ecc0a0_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_f3d9a0_000000_1.00_0.75_0.00": 0.25,
+  "rowHouses_f5efe4_000000_1.00_0.70_0.00": 0.25,
+  "stadium_222222_fff2c0_2.00_1.00_0.00": 0.5,
+  "stadium_2f6b4f_000000_1.00_0.80_0.00": 0.25,
+  "stadium_333333_000000_1.00_1.00_0.00": 0.25,
+  "stadium_3f8a3f_000000_1.00_1.00_0.00": 0.25,
+  "theatre_5a1020_ff3050_1.00_1.00_0.00": 0.25,
+  "theatre_cccccc_000000_1.00_0.40_0.60": 0.25,
+  "theatre_e0d2b4_000000_1.00_0.75_0.00": 0.25,
+  "theatre_ffffff_333333_0.18_0.45_0.00": 0.045,
+  "theatre_ffffff_ffffff_1.70_0.45_0.00": 0.425,
+  "wharf_c85a3a_000000_1.00_0.80_0.00": 0.25,
+  "wharf_d8402a_000000_1.00_0.55_0.00": 0.25,
+  "wharf_d8c9b0_000000_1.00_0.80_0.00": 0.25,
+  "wharf_f4e3b0_ffcf5a_0.70_1.00_0.00": 0.175,
+  "windmill_5a4030_000000_1.00_0.90_0.00": 0.25,
+  "windmill_9a8055_000000_1.00_0.85_0.00": 0.25,
+  "windmill_ece4d0_000000_1.00_0.80_0.00": 0.25
+ },
+ "irradiance": {
+  "file": "irradiance.bin",
+  "dims": [
+   64,
+   12,
+   64
+  ],
+  "bounds": {
+   "x0": -860.0,
+   "x1": 860.0,
+   "z0": -890.0,
+   "z1": 670.0,
+   "y0": -15.0,
+   "y1": 245.0
+  },
+  "scale": 1.416077,
+  "gamma": 2.2,
+  "sun": [
+   -0.4504644278126628,
+   0.13993150310776334,
+   -0.8817601565694677
+  ],
+  "sunColor": [
+   1.0,
+   0.37626,
+   0.13014
+  ],
+  "skyColor": [
+   0.25415,
+   0.14703,
+   0.47932
+  ]
+ },
+ "env": "env.ktx2",
+ "atmosphere": {
+  "sun": {
+   "dir": [
+    -0.45046,
+    0.13993,
+    -0.88176
+   ],
+   "color": "#ffb37a",
+   "intensity": 2.1
+  },
+  "skyColor": "#7a3f5c",
+  "fogColor": "#d97b52",
+  "fogDensity": 0.00105,
+  "exposure": 1.12
+ }
+}

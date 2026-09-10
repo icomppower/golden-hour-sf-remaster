@@ -1,0 +1,72 @@
+{
+ "budget": 6,
+ "iterations": [
+  {
+   "n": 1,
+   "ts": "2026-09-10T03:03:10.874Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.947497352546561,
+   "rubricWorst": 3.793819816547089
+  },
+  {
+   "n": 2,
+   "ts": "2026-09-10T03:06:42.110Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.443741523766989,
+   "rubricWorst": 3.2750204341113434
+  },
+  {
+   "n": 3,
+   "ts": "2026-09-10T03:33:59.076Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.631828669849698,
+   "rubricWorst": 3.1764806555254825
+  },
+  {
+   "n": 4,
+   "ts": "2026-09-10T03:54:44.152Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.525162243816567,
+   "rubricWorst": 1
+  },
+  {
+   "n": 5,
+   "ts": "2026-09-10T04:46:30.436Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.448923954664107,
+   "rubricWorst": 3.736576965979142
+  },
+  {
+   "n": 6,
+   "ts": "2026-09-10T05:13:56.940Z",
+   "gates": {
+    "viewpoint captures": true,
+    "rubric mean >= 7.5": false,
+    "no viewpoint below 6.0": false
+   },
+   "rubricMean": 6.709998794129934,
+   "rubricWorst": 4.432280910263012
+  }
+ ],
+ "exit": "budget exhausted"
+}

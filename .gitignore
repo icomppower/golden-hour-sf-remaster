@@ -1,0 +1,11 @@
+node_modules/
+build/city.json
+build/city.bin
+build/gltf/
+build/blend/
+build/lighting/
+build/world.json
+test/shots/
+test/_*.mjs
+.DS_Store
+*.blend1

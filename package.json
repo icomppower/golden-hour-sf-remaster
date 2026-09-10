@@ -1,0 +1,39 @@
+{
+  "name": "golden-hour-sf-remaster",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": "node build/city_to_json.mjs",
+    "assets": "blender --background --python build/make_landmark_assets.py",
+    "geometry": "blender --background --python build/build_city.py -- --lighting golden --stage geometry",
+    "bake:golden": "blender --background --python build/build_city.py -- --lighting golden --stage bake --samples 128",
+    "bake:night": "blender --background --python build/build_city.py -- --lighting night --stage bake --samples 128 --no-export",
+    "pack": "node build/pack.mjs",
+    "build": "npm run extract && npm run assets && npm run bake:golden && npm run bake:night && npm run pack",
+    "gates": "node test/gates.mjs",
+    "serve": "node test/server.mjs 8099"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "@gltf-transform/functions": "^4.5.0",
+    "draco3dgltf": "^1.5.7",
+    "ktx2-encoder": "^0.6.0",
+    "sharp": "^0.35.4",
+    "three": "^0.160.1"
+  },
+  "private": "true",
+  "devDependencies": {
+    "puppeteer": "^25.10.0"
+  }
+}
